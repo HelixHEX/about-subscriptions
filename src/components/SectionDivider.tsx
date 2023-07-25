@@ -9,25 +9,25 @@ const SectionDivider = ({
 }: {
   number: string;
   children: ReactElement;
-  title: string
+  title: string;
 }) => {
   return (
-    <Flex mt={10} minH="100vh" h="auto" flexDir={"column"}>
+    <Flex mt={40} minH="100vh" h="auto" flexDir={"column"}>
       <HStack mt={3}>
         <Divider bg="gray.800" />
         <Number number={number} />
         <Divider bg="gray.800" />
       </HStack>
       <Text
-            mt={10}
-            fontWeight="800"
-            fontSize={40}
-            alignSelf={"center"}
-            color="gray.800"
-          >
-            {title}
-          </Text>
-      <Flex w='100%' h='100%' flexDir={'column'} alignSelf={'center'}>
+        mt={10}
+        fontWeight="800"
+        fontSize={40}
+        alignSelf={"center"}
+        color="gray.800"
+      >
+        {title}
+      </Text>
+      <Flex mt={10} w="100%" h="100%" flexDir={"column"} alignSelf={"center"}>
         {children}
       </Flex>
     </Flex>
